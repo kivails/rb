@@ -1,0 +1,32 @@
+name: Deploy to Render
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Syntax check
+        run: |
+          python -m py_compile bot.py config.py db.py tasks.py keep_alive.py utils.py ratelimit.py sponsors.py web_admin.py
+
+      - name: Trigger Render deploy
+        if: ${{ secrets.RENDER_DEPLOY_HOOK != '' }}
+        run: |
+          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
+
+      - name: Wait and health check
+        if: ${{ secrets.RENDER_URL != '' }}
+        run: |
+          sleep 60
+          curl -f "${{ secrets.RENDER_URL }}/health" || exit 1
