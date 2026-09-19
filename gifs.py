@@ -1,0 +1,22 @@
+# Замени ссылки на свои (прямые .mp4 или .gif)
+GIFS = {
+    "start":       ["https://media.tenor.com/2nKSTD2fxcUAAAAC/anime-wave.mp4"],
+    "captcha_ok":  ["https://media.tenor.com/6c5b1pWu1vIAAAAC/anime-happy.mp4"],
+    "captcha_bad": ["https://media.tenor.com/rLzYtIkTH3kAAAAC/anime-cry.mp4"],
+    "menu":        ["https://media.tenor.com/1nBUjkFgVjAAAAAC/anime-hello.mp4"],
+    "profile":     ["https://media.tenor.com/oJ1YMHmF7bAAAAAC/anime-smile.mp4"],
+    "ref":         ["https://media.tenor.com/9zZ1lOSfY0YAAAAC/anime-happy.mp4"],
+    "promo":       ["https://media.tenor.com/QXf0Y6Y1l0AAAAAC/anime-gift.mp4"],
+    "daily":       ["https://media.tenor.com/YwK6l8r3Y5AAAAAC/anime-party.mp4"],
+    "withdraw":    ["https://media.tenor.com/Rk8C7vL3Y2AAAAAC/anime-money.mp4"],
+    "top":         ["https://media.tenor.com/Pq3vK8Y5l1AAAAAC/anime-dance.mp4"],
+    "error":       ["https://media.tenor.com/rLzYtIkTH3kAAAAC/anime-cry.mp4"],
+    "success":     ["https://media.tenor.com/6c5b1pWu1vIAAAAC/anime-happy.mp4"],
+    "thanks":      ["https://media.tenor.com/oJ1YMHmF7bAAAAAC/anime-thanks.mp4"],
+    "happy":       ["https://media.tenor.com/6c5b1pWu1vIAAAAC/anime-happy.mp4"],
+    "wave":        ["https://media.tenor.com/2nKSTD2fxcUAAAAC/anime-wave.mp4"],
+    "cry":         ["https://media.tenor.com/rLzYtIkTH3kAAAAC/anime-cry.mp4"],
+    "smile":       ["https://media.tenor.com/oJ1YMHmF7bAAAAAC/anime-smile.mp4"],
+    "wink":        ["https://media.tenor.com/8c5b1pWu1vIAAAAC/anime-wink.mp4"],
+    "dance":       ["https://media.tenor.com/Pq3vK8Y5l1AAAAAC/anime-dance.mp4"],
+}
