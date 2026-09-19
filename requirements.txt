@@ -1,0 +1,13 @@
+aiogram==3.4.1
+aiosqlite
+asyncpg
+redis
+apscheduler
+fastapi
+uvicorn[standard]
+jinja2
+aiohttp
+python-dotenv
+sentry-sdk
+pydantic
+httpx
