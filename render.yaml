@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: rubux-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    healthCheckPath: /health
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: CHANNEL_ID
+        sync: false
+      - key: CHAT_ID
+        sync: false
+      - key: CHANNEL_URL
+        sync: false
+      - key: CHAT_URL
+        sync: false
+      - key: BIO_LINK
+        sync: false
+      - key: REDIS_URL
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: WEB_PASSWORD
+        sync: false
+      - key: WEBAPP_URL
+        sync: false
+      - key: SENTRY_DSN
+        sync: false
+      - key: PING_SECRET
+        sync: false
+      - key: PORT
+        value: 8080
+      - key: PYTHON_VERSION
+        value: 3.11.0
