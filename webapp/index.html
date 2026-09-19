@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Rubux</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="avatar" id="avatar">🌸</div>
+    <div class="hello">
+      <div class="name" id="name">Привет!</div>
+      <div class="sub" id="nick">—</div>
+    </div>
+  </header>
+
+  <div class="balance-card">
+    <div class="label">Твой баланс</div>
+    <div class="balance"><span id="balance">0</span> <small>RBX</small></div>
+    <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+    <div class="sub2">до вывода: <b id="toWithdraw">10</b> RBX</div>
+  </div>
+
+  <div class="grid">
+    <a class="tile" href="#" data-action="ref"><div class="icon">🎀</div><div class="ttl">Реф-ссылка</div></a>
+    <a class="tile" href="#" data-action="daily"><div class="icon">🎰</div><div class="ttl">Daily</div></a>
+    <a class="tile" href="#" data-action="promo"><div class="icon">🎁</div><div class="ttl">Промокод</div></a>
+    <a class="tile" href="#" data-action="withdraw"><div class="icon">💸</div><div class="ttl">Вывод</div></a>
+    <a class="tile" href="#" data-action="top"><div class="icon">🏆</div><div class="ttl">Топы</div></a>
+    <a class="tile" href="#" data-action="history"><div class="icon">🧾</div><div class="ttl">История</div></a>
+  </div>
+
+  <div class="loader" id="loader">Загрузка...</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
